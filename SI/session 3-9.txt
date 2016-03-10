@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- 	
+			Written by:	James Leduc
+			Created on:	March 8, 2016
+			Purpose:	To practice working with:
+							- creating one dimensional arrays
+							- Array Literals and the Array() Constructor
+							- Array Length Property
+							- getElementById DOM Method and innerHTML DOM Property
+							- Push Method and Delete Operator
+		-->
+		<title>Array Intro</title>
+	</head>
+	<body>
+		<!-- Create HTML holding elements for JavaScript array displays. We will fill them later with JavaScript. -->
+		<p><b>Below is the entire 'colors' array: </b></p>
+		<!-- The <b> tag makes your text 'bold' and the <p> tag defines a 'paragraph' which is a block-level element in HTML. -->
+		<div id="arr"></div>
+		<!-- The <div> tag defines a 'division' element, which is also a block-level element in HTML. -->
+		<p><b>Below is the last element of the 'colors' array: </b></p>
+		<!-- *Notice, each <div> tag is assigned a different ID. -->
+		<b><div id="ele" style="color:#8F5E99"></div></b>
+		<!-- The hexadecimal value for the color violet was embedded into the <div> tag above to display the text within as violet. -->
+		<p><b>Below is an empty array, 'empty1' (Notice, nothing displays.): </b></p>
+		<!-- We assign ID's to our tags so we can call upon them with CSS or, in this case, JS's getElementById, which you'll see later. -->
+		<div id="emp"></div>
+		<!-- The reason these all have different ID's is so we can fill them each with something different later on. -->
+		<p><b>Below is the 'empty1' array with elements added: </b></p>
+		<!-- We can also display within the <span> tag, which is an in-line element in HTML. -->
+		<span id="add"></span>
+		<p><b>Below is the 'empty1' array with the 2nd and 3rd elements deleted<br>
+		(Notice, the commas remain at the end. 
+		This is because the addresses are still there, but they're empty.): </b></p>
+		<!-- The <br> tag defines a line 'break' within a paragraph. -->
+		<span id="rem"></span>
+		<script>
+		
+			//Note: Not everything created in this exercise will be displayed.
+			
+			//Creating Arrays with Array Literals:
+			//Literals use brackets '[]'.
+			//We will use literals later to call upon the array.
+			// - declare an empty array
+			var empty1 = [];
+			// - declare and fill an array with 7 elements
+			var roygbiv = ["red","orange","yellow","green","blue","indigo","violet"];
+
+			//Creating Arrays with the Array() Constructor:
+			//The constructor uses parentheses '()'.
+			// - declare an empty array
+			var empty2 = new Array();
+			// - declare and allocate an array with a length of 10
+			var sized = new Array(10);
+			// - declare and fill an array with 7 elements
+			var colors = new Array("red","orange","yellow","green","blue","indigo","violet");
+			
+			//Retrieve an Array Element and Use the Array Length Property:
+			//Each array element has an address, or index.
+			//You can retrieve an element from an array by calling its index using literals.
+			//But remember, array index addresses begin at 0.
+			//So, the 1st element is located at index 0, the 2nd at index 1, the 3rd at index 2, and so forth.
+			// - call the 1st element of the 'colors' array => 'red'
+			var e1 = colors[0];	//index 0
+			// - call the 4th element of the 'colors' array => 'green'
+			var e4 = colors[3];	//index 3
+			//Here we will call upon the length of the array using the length property.
+			// - set the index variable 'i' to the length of the array => '7'
+			var i = colors.length;	
+			// - call the last element of the 'colors' array => 'violet'
+			//Remember, index addresses begin at 0.
+			//So, we must subtract 1 from the length to remain within the scope of the array.
+			//If we step out of the array, 'undefined' will be returned.
+			var aLast = colors[i-1];	
+			
+			//Display Using getElementById DOM Method and innerHTML DOM Property:
+			// - display the entire 'colors' array
+			document.getElementById("arr").innerHTML = colors;
+			// - display the last element from the 'colors' array
+			document.getElementById("ele").innerHTML = aLast;
+			// - display the empty 'empty1' array
+			document.getElementById("emp").innerHTML = empty1;
+			
+			//Add (Push Method) and Remove (Delete Operator) Elements from an Array
+			// - add elements to the 'empty1' array
+			empty1.push("zero");
+			empty1.push("one");
+			empty1.push("two");
+			// - display 'empty1' with new elements
+			document.getElementById("add").innerHTML = empty1;
+			// - delete the last element from the 'empty1' array
+			delete empty1[2];
+			// - delete the 2nd element from the 'empty1' array using 'null'
+			empty1[1] = null;
+			// - display 'empty1' array with the last element deleted
+			document.getElementById("rem").innerHTML = empty1;
+			
+			//Challenge: Display everything created in this exercise.
+			
+		</script>
+	</body>
+</html>

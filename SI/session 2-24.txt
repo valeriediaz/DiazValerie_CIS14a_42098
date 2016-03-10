@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!-- 	
+			Written by:	James Leduc
+			Created on:	February 21, 2016
+			Purpose:	To practice basic HTML table, anchor, image, and horizontal rule tags.
+		-->
+        <title>Simple HTML Page</title>
+    </head>
+    <body>
+		<h1>
+			This is a simple HTML page...
+		</h1>
+		<hr>
+		<h2>
+			This is an example of <u>table tags</u> (&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;)...
+		</h2>
+		<table border="1" style="width:100%">
+			<tr>
+				<td><center>1X1</center></td>
+				<td><center>1X2</center></td> 
+				<td><center>1X3</center></td>
+			</tr>
+			<tr>
+				<td><center>2X1</center></td>
+				<td><center>2X2</center></td> 
+				<td><center>2X3</center></td>
+			</tr>
+		</table>
+		<p>
+			This table has the dimensions of 2X3, a <b>border</b> of 1, 
+			and a <b>style</b> of 100% the width of the page. 
+			Plus, its contents have been centered.
+		</p>
+		<hr>
+		<h2>
+			This is an example of an <u>anchor tag</u> (&lt;a&gt;)...
+		</h2>
+		<a href="http://www.rcc.edu/Pages/home.aspx">Riverside City College</a>
+		<p>
+			This anchor tag links directly to the RCC Homepage.
+		</p>
+		<hr>
+		<h2>
+			This is an example of an <u>image tag</u> (&lt;img&gt;)...
+		</h2>
+		<img src="javascript.png">
+		<p>
+			This image tag is linked to an image located in the same directory 
+			as this HTML page.
+		</p>
+		<hr>
+		<h2>
+			The lines separating the examples above are <u>horizontal rule tags</u> (&lt;hr&gt;).
+		</h2>
+    </body>
+</html>
