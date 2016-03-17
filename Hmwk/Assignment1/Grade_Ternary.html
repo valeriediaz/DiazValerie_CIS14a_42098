@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Grade_Ternary</title>
+</head>
+
+<body>
+	<script>
+		//Declare Variables
+		 var score = 80; 
+		 var grade;
+		 
+		 //Calculate Grade Using Ternary Operator
+		 grade =    (score >= 90)? "A":
+		 			(score >= 80)? "B":
+		 			(score >= 70)? "C":
+		 			(score >= 60)? "D": "F";
+		 			
+		 //Output test score
+		 var str = "<h1> Score: "+score+"</h1>";
+		     str+= "<h1> Grade: "+grade+"</h1>";
+		 document.write(str); 
+		 
+	</script>
+</body>
+</html>
