@@ -18,9 +18,9 @@
        <th>x^y^x</th>
        <th>x^y^y</th>
        <th>!(x&&y)</th>
-       <th>!x||!y)</th>
+       <th>(!x||!y)</th>
        <th>!(x||y)</th>
-       <th>!x&&!y)</th>
+       <th>(!x&&!y)</th>
   </tr>
   <tr>
   <script type="text/javascript">
@@ -33,6 +33,13 @@
 	document.write("<td>"+(!y?'T':'F')+"</td>");
 	document.write("<td>"+(x&&y?'T':'F')+"</td>");
 	document.write("<td>"+(x||y?'T':'F')+"</td>");
+	document.write("<td>"+(x^y?'T':'F')+"</td>"); 
+	document.write("<td>"+(x^y^x?'T':'F')+"</td>"); 
+	document.write("<td>"+(x^y^y?'T':'F')+"</td>"); 
+	document.write("<td>"+(!(x&&y)?'T':'F')+"</td>"); 
+	document.write("<td>"+(!x||!y?'T':'F')+"</td>"); 
+	document.write("<td>"+(!(x||y)?'T':'F')+"</td>"); 
+	document.write("<td>"+(!x&&!y?'T':'F')+"</td>"); 
   </script>
   </tr>
   <tr>
@@ -46,7 +53,54 @@
 	document.write("<td>"+(!y?'T':'F')+"</td>");
 	document.write("<td>"+(x&&y?'T':'F')+"</td>");
 	document.write("<td>"+(x||y?'T':'F')+"</td>");   
-	
+	document.write("<td>"+(x^y?'T':'F')+"</td>"); 
+	document.write("<td>"+(x^y^x?'T':'F')+"</td>"); 
+	document.write("<td>"+(x^y^y?'T':'F')+"</td>"); 
+	document.write("<td>"+(!(x&&y)?'T':'F')+"</td>"); 
+	document.write("<td>"+(!x||!y?'T':'F')+"</td>"); 
+	document.write("<td>"+(!(x||y)?'T':'F')+"</td>"); 
+	document.write("<td>"+(!x&&!y?'T':'F')+"</td>"); 
+	</script>
+  </tr>
+  <tr>
+	<script type="text/javascript">
+	//Initialize variables x and y 
+	x=false;
+	y=true; 
+	//Display Row 3
+	document.write("<td>"+(x?'T':'F')+"</td>");
+	document.write("<td>"+(y?'T':'F')+"</td>");
+	document.write("<td>"+(!x?'T':'F')+"</td>");
+	document.write("<td>"+(!y?'T':'F')+"</td>");
+	document.write("<td>"+(x&&y?'T':'F')+"</td>");
+	document.write("<td>"+(x||y?'T':'F')+"</td>");   
+	document.write("<td>"+(x^y?'T':'F')+"</td>"); 
+	document.write("<td>"+(x^y^x?'T':'F')+"</td>"); 
+	document.write("<td>"+(x^y^y?'T':'F')+"</td>"); 
+	document.write("<td>"+(!(x&&y)?'T':'F')+"</td>"); 
+	document.write("<td>"+(!x||!y?'T':'F')+"</td>"); 
+	document.write("<td>"+(!(x||y)?'T':'F')+"</td>"); 
+	document.write("<td>"+(!x&&!y?'T':'F')+"</td>");
+	</script>
+  </tr>
+  <tr>
+	<script type="text/javascript">
+	//Initialize variables x and y 
+	y=false; 
+	//Display Row 4
+	document.write("<td>"+(x?'T':'F')+"</td>");
+	document.write("<td>"+(y?'T':'F')+"</td>");
+	document.write("<td>"+(!x?'T':'F')+"</td>");
+	document.write("<td>"+(!y?'T':'F')+"</td>");
+	document.write("<td>"+(x&&y?'T':'F')+"</td>");
+	document.write("<td>"+(x||y?'T':'F')+"</td>");   
+	document.write("<td>"+(x^y?'T':'F')+"</td>"); 
+	document.write("<td>"+(x^y^x?'T':'F')+"</td>"); 
+	document.write("<td>"+(x^y^y?'T':'F')+"</td>"); 
+	document.write("<td>"+(!(x&&y)?'T':'F')+"</td>"); 
+	document.write("<td>"+(!x||!y?'T':'F')+"</td>"); 
+	document.write("<td>"+(!(x||y)?'T':'F')+"</td>"); 
+	document.write("<td>"+(!x&&!y?'T':'F')+"</td>");
 	</script>
   </tr>
 </table>
