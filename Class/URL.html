@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+		var url=window.location.href; 
+		document.write("<h2>"+url+"</h2>");
+		var info=url.split("?"); 
+		var nameValuePairs = info[1].split("&"); 
+		for (var i=0; nameValuePairs.length; i++) {
+			var map = nameValuePairs[i].split("="); 
+			var name = map[0]; 
+			var value = map[1]; 
+			document.write("<h2>"+name+"="+value+"</h2>"); 
+		}
+	</script>
+</body>
+</html>
