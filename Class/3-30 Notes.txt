@@ -13,3 +13,10 @@ JSON Syntax
 w3schools.com/js/js_json.asp
 
 - Mastermind game
+
+
+Battleship Game
+Changes: 
+- Add isNAN() so that non-numbers won't count as a "miss"
+- Make it so that 3 hits in the same spot don't count as sinking a ship
+- Hit/Miss ratio change to percentage/two decimal points
