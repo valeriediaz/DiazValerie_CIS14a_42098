@@ -1,0 +1,15 @@
+JAVASCRIPT
+
+
+Total of 4 Projects:
+
+1. Game
+2. Survey Engine
+3. Grant HiTech - forms
+4. Storefront 
+
+
+JSON Syntax
+w3schools.com/js/js_json.asp
+
+- Mastermind game
