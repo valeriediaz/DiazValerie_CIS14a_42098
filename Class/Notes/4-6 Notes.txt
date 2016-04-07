@@ -1,0 +1,22 @@
+Local Storage
+
+* depending on the browser, local store requires a websites 
+(seems to work fine in Chrome) 
+
+Storage
+
+* set, get, remove
+
+//Store
+localStorage.setItem("lastname", "Smith"); 
+
+set (name of item, text of item) 
+stringify text 
+
+* Doesn't always work with local storage, 
+Chrome's local storage is different from Firefox's local storage. 
+
+
+
+
+Figure out how to delete from inventory. 
