@@ -15,3 +15,8 @@ stringify text
 
 * Doesn't always work with local storage, 
 Chrome's local storage is different from Firefox's local storage. 
+
+
+
+
+Figure out how to delete from inventory. 
